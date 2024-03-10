@@ -1,5 +1,5 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import {View, Text} from 'react-native';
+import React from 'react';
 import UserData from '../components/UserData';
 import CompanyData from '../components/CompanyData';
 
@@ -15,7 +15,7 @@ const ImportingData = () => {
         }}>
         Personal Data
       </Text>
-      <UserData />
+      <UserData propsName={'Props Akhil'} />
       <Text
         style={{
           fontSize: 40,
@@ -28,6 +28,6 @@ const ImportingData = () => {
       <CompanyData />
     </View>
   );
-}
+};
 
-export default ImportingData
+export default ImportingData;

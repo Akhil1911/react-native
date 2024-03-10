@@ -1,8 +1,9 @@
 import {View, Text, Button, TouchableOpacity} from 'react-native';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 const Btn = () => {
   const [count, setcount] = useState(0);
+  useEffect(() => {}, [count]);
   return (
     <View>
       {/* <Button
@@ -17,7 +18,7 @@ const Btn = () => {
         style={{
           textAlign: 'center',
           fontSize: 40,
-          marginTop: 200,
+          marginTop: 10,
         }}>
         {count}
       </Text>
@@ -27,7 +28,7 @@ const Btn = () => {
         }}
         style={{backgroundColor: 'black', padding: 20, marginTop: 200}}>
         <Text style={{color: 'white', textAlign: 'center', fontSize: 40}}>
-          Hello Guyz
+          Increment
         </Text>
       </TouchableOpacity>
     </View>
