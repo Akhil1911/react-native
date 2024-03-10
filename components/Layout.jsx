@@ -5,6 +5,7 @@ import LinkING from '../Pages/LinkING';
 import Home from './GeneratePasssword/Home';
 import LoginBefore from './LoginPage/LoginBefore';
 import Routing from './LoginPage/Routing';
+import Boards from './SunChokdi/Boards';
 
 const Layout = () => {
   return (
@@ -14,7 +15,8 @@ const Layout = () => {
       {/* <LinkING /> */}
       {/* <Home/> */}
       {/* <LoginBefore />*/}
-      <Routing />
+      {/* <Routing /> */}
+      <Boards />
     </>
   );
 };
