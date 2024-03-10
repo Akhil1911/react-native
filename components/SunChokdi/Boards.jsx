@@ -22,8 +22,10 @@ const Boards = () => {
   let status;
   if (winner) {
     status = 'Winner: ' + winner;
-  } else {
+  } else if (!squares.every(square => square !== null)) {
     status = 'Next player: ' + (isX ? 'X' : 'O');
+  } else {
+    status = "It's a draw!";
   }
 
   return (
@@ -210,7 +212,7 @@ const Boards = () => {
       </View>
       <Text
         onPress={() => {
-          setSquares([]);
+          setSquares(Array(9).fill(null));
           setIsX(true);
         }}
         style={{
